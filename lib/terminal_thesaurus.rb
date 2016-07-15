@@ -1,5 +1,5 @@
 require "terminal_thesaurus/version"
+require "terminal_thesaurus/wrapper"
 
 module TerminalThesaurus
-  # Your code goes here...
 end
