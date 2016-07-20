@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require "terminal_thesaurus"
+
+thesaurus = TerminalThesaurus::Wrapper.new(ARGV[0])
+thesaurus.look_up
+puts("
+Synonyms: #{thesaurus.synonyms}
+\n
+Antonyms: #{thesaurus.antonyms}
+\n
+")
