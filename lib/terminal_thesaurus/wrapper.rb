@@ -3,7 +3,7 @@ require 'nokogiri'
 
 module TerminalThesaurus
   class Wrapper
-    attr_reader :word, :url, :synonyms, :antonyms, :related
+    attr_reader :word, :url, :synonyms, :antonyms, :type, :definition
 
     def initialize(word)
       @word = word
@@ -19,6 +19,10 @@ module TerminalThesaurus
 
     private
     def parse(page)
+      # definition / type
+      @type = page.css('.synonym-description .txt').first.text
+      @definition = page.css('.synonym-description .ttl').first.text
+
       # synonyms
       page.css('.synonyms .relevancy-list ul').each do |column|
         column.css('li').each do |row|
