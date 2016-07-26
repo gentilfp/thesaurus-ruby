@@ -36,9 +36,6 @@ module TerminalThesaurus
           @antonyms << row.children[0].children[0].children[0].text
         end
       end
-
-      # related
-      nil
     end
   end
 end
