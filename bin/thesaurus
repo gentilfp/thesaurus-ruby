@@ -5,8 +5,10 @@ require "terminal_thesaurus"
 thesaurus = TerminalThesaurus::Wrapper.new(ARGV[0])
 thesaurus.look_up
 puts("
-Synonyms: #{thesaurus.synonyms}
+#{ARGV[0].upcase}: #{thesaurus.type} - #{thesaurus.definition}
 \n
-Antonyms: #{thesaurus.antonyms}
+Synonyms: #{thesaurus.synonyms.join(', ')}
+\n
+Antonyms: #{thesaurus.antonyms.join(', ')}
 \n
 ")
