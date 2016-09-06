@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe TerminalThesaurus::Wrapper do
+RSpec.describe Thesaurus::Wrapper do
   describe '#initialize' do
     subject { described_class.new(word) }
     let(:word) { 'after' }

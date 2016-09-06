@@ -1,9 +1,9 @@
 require 'open-uri'
 require 'nokogiri'
 
-module TerminalThesaurus
+module Thesaurus
   class Wrapper
-    attr_reader :word, :url, :synonyms, :antonyms, :type, :definition
+    attr_reader :word, :url, :synonyms, :antonyms, :related, :type, :definition
 
     def initialize(word)
       @word = word

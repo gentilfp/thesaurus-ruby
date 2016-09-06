@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'terminal_thesaurus/version'
+require 'thesaurus/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "terminal_thesaurus"
-  spec.version       = TerminalThesaurus::VERSION
+  spec.name          = "thesaurus"
+  spec.version       = Thesaurus::VERSION
   spec.authors       = ["Felipe Gentil"]
   spec.email         = ["cdigentil@gmail.com"]
 

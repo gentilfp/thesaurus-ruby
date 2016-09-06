@@ -5,7 +5,7 @@ SimpleCov.start do
   add_filter "/spec/"
 end
 
-require 'terminal_thesaurus'
+require 'thesaurus'
 require 'webmock/rspec'
 
 RSpec.configure do |config|

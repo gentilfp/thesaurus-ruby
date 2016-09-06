@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in terminal_thesaurus.gemspec
+# Specify your gem's dependencies in thesaurus.gemspec
 gemspec

@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 
-require "terminal_thesaurus"
+require "thesaurus"
 
 if ARGV[0].nil?
   puts "Argument not found! Use: $ thesaurus <word>"
 else
-  thesaurus = TerminalThesaurus::Wrapper.new(ARGV[0])
+  thesaurus = Thesaurus::Wrapper.new(ARGV[0])
   thesaurus.look_up
   puts("
   #{ARGV[0].upcase}: #{thesaurus.type} - #{thesaurus.definition}
