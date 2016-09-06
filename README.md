@@ -1,13 +1,14 @@
 # Thesaurus
+http://www.thesaurus.com/
 
-Thesaurus dictionary, synonyms, antonyms and related. All via command line.
+Thesaurus dictionary, synonyms, antonyms and related.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'thesaurus'
+gem 'thesaurus-ruby'
 ```
 
 And then execute:
@@ -16,11 +17,20 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install thesaurus
+    $ gem install thesaurus-ruby
 
 ## Usage
 
-TODO: Write usage instructions here
+##### From your terminal
+```
+$ thesaurus [WORD]
+```
+
+##### From your ruby application
+```
+thesaurus = Thesaurus::Wrapper.new(word)
+thesaurus.look_up
+```
 
 ## Development
 
